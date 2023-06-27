@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2023-06-26T19:15:30.976Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="-soyxBXTnLqxqwsVtWrD" version="21.5.0" type="device">
+  <diagram name="Страница 1" id="Ck3XsJZ-yuEhmRN7D4sO">
+    <mxGraphModel dx="2607" dy="1347" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1i25OEMm9nBxVCYuIsFr-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1i25OEMm9nBxVCYuIsFr-1" target="1i25OEMm9nBxVCYuIsFr-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1i25OEMm9nBxVCYuIsFr-1" value="feature set F" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1i25OEMm9nBxVCYuIsFr-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="350" width="360" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="1i25OEMm9nBxVCYuIsFr-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="1i25OEMm9nBxVCYuIsFr-7" target="1i25OEMm9nBxVCYuIsFr-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1i25OEMm9nBxVCYuIsFr-7" value="training classifier&lt;br&gt;C on F&#39;&lt;br&gt;(F for 1st step)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="485" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1i25OEMm9nBxVCYuIsFr-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="1i25OEMm9nBxVCYuIsFr-8" target="1i25OEMm9nBxVCYuIsFr-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1i25OEMm9nBxVCYuIsFr-8" value="selecting F&#39; from F&lt;br&gt;based on some&lt;br&gt;inner properties of C" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="655" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1i25OEMm9nBxVCYuIsFr-15" value="stopping criterion is not satisfied" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="360" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1i25OEMm9nBxVCYuIsFr-16" value="classifier C construction" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="320" width="160" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

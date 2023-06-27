@@ -1,0 +1,110 @@
+<mxfile host="app.diagrams.net" modified="2023-06-22T23:26:40.383Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="GHe3eyk4iXWXX0uX299y" version="21.4.0" type="device">
+  <diagram id="a0bix6fsuURSSupgG_sC" name="Страница 1">
+    <mxGraphModel dx="1434" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cfQSxRJiPwNzPvcH-way-1" value="Извлечение&lt;br&gt;признаков" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="545" y="465" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-2" value="Балансировка&lt;br&gt;набора&lt;br&gt;данных" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="655" y="465" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-3" value="Обучение&lt;br&gt;модели" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="765" y="465" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-4" value="Заполнение&lt;br&gt;пропусков" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="435" y="465" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-5" value="Поиск&lt;br&gt;аномалий" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="325" y="465" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="cfQSxRJiPwNzPvcH-way-6" target="cfQSxRJiPwNzPvcH-way-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-6" value="" style="shape=internalStorage;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="215" y="465" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="cfQSxRJiPwNzPvcH-way-8" target="cfQSxRJiPwNzPvcH-way-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-20" value="Гиперпараметры&lt;br&gt;метода поиска&lt;br&gt;аномалий" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cfQSxRJiPwNzPvcH-way-9" vertex="1" connectable="0">
+          <mxGeometry x="-0.5964" relative="1" as="geometry">
+            <mxPoint y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-8" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=-90;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="375" y="335" width="20" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" source="cfQSxRJiPwNzPvcH-way-11" target="cfQSxRJiPwNzPvcH-way-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="505" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="495" y="435" />
+              <mxPoint x="495" y="435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-21" value="Гиперпараметры&lt;br&gt;метода заполнения&lt;br&gt;пропусков" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cfQSxRJiPwNzPvcH-way-10" vertex="1" connectable="0">
+          <mxGeometry x="-0.6276" relative="1" as="geometry">
+            <mxPoint y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-11" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=-90;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="485" y="335" width="20" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" source="cfQSxRJiPwNzPvcH-way-13" target="cfQSxRJiPwNzPvcH-way-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="645" y="515" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-24" value="Гиперпараметры&lt;br&gt;методы извлечения&lt;br&gt;признаков" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cfQSxRJiPwNzPvcH-way-12" vertex="1" connectable="0">
+          <mxGeometry x="-0.6041" relative="1" as="geometry">
+            <mxPoint y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-13" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=-90;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="595" y="335" width="20" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" source="cfQSxRJiPwNzPvcH-way-15" target="cfQSxRJiPwNzPvcH-way-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="725" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-25" value="Гиперпараметры&lt;br&gt;метода балансировки&lt;br&gt;набора данных" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cfQSxRJiPwNzPvcH-way-14" vertex="1" connectable="0">
+          <mxGeometry x="-0.6054" relative="1" as="geometry">
+            <mxPoint y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-15" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=-90;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="705" y="335" width="20" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" source="cfQSxRJiPwNzPvcH-way-17" target="cfQSxRJiPwNzPvcH-way-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="845" y="525" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-26" value="Гиперпараметры&lt;br&gt;метода обучения&lt;br&gt;модели" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cfQSxRJiPwNzPvcH-way-16" vertex="1" connectable="0">
+          <mxGeometry x="-0.6021" relative="1" as="geometry">
+            <mxPoint y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-17" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=-90;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="815" y="335" width="20" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-18" value="Линейная конфигурация гиперпараметров комбинации алгоритмов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="335" y="305" width="540" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-31" value="Набор данных" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="235" y="495" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cfQSxRJiPwNzPvcH-way-33" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="345" y="350" as="sourcePoint" />
+            <mxPoint x="865" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

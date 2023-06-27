@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" modified="2023-06-27T04:58:38.991Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="IoHE25JSbRrWcPsEvolQ" version="21.5.0" type="device">
+  <diagram name="Страница 1" id="00g6aJk9K3vJE5Yp4JrM">
+    <mxGraphModel dx="989" dy="553" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;endArrow=classicThin;endFill=1;" parent="1" source="azWzWG-NQFu0Fi-3XKSD-1" target="azWzWG-NQFu0Fi-3XKSD-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classicThin;endFill=1;" parent="1" source="azWzWG-NQFu0Fi-3XKSD-1" target="azWzWG-NQFu0Fi-3XKSD-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-1" value="Maximum Likelihood" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="483" y="325" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classicThin;endFill=1;" parent="1" source="azWzWG-NQFu0Fi-3XKSD-2" target="azWzWG-NQFu0Fi-3XKSD-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classicThin;endFill=1;" parent="1" source="azWzWG-NQFu0Fi-3XKSD-2" target="azWzWG-NQFu0Fi-3XKSD-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-2" value="Explicit density" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="383" y="385" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classicThin;endFill=1;" parent="1" source="azWzWG-NQFu0Fi-3XKSD-3" target="azWzWG-NQFu0Fi-3XKSD-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=classicThin;endFill=1;" parent="1" source="azWzWG-NQFu0Fi-3XKSD-3" target="azWzWG-NQFu0Fi-3XKSD-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-3" value="Implicit density" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="603" y="385" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-4" value="Direct" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="733" y="325" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-5" value="Markov Chain" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="663" y="425" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-6" value="Tractable density" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="308" y="425" width="135" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classicThin;endFill=1;" parent="1" source="azWzWG-NQFu0Fi-3XKSD-7" target="azWzWG-NQFu0Fi-3XKSD-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classicThin;endFill=1;" parent="1" source="azWzWG-NQFu0Fi-3XKSD-7" target="azWzWG-NQFu0Fi-3XKSD-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-7" value="Approximate density" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="463" y="425" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-8" value="Variational" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="463" y="465" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-9" value="Markov Chain" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="553" y="465" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-22" value="&lt;div style=&quot;text-align: left; font-size: 11px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;- Fully visible belief nets&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 11px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;- NADE&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 11px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;- MADE&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 11px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;- PixelRNN&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;- Change of variables models (nonlinear ICA)&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="308" y="445" width="135" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-24" value="Variational autoencoder" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="463" y="485" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-26" value="Boltzmann machine" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="553" y="485" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-27" value="GSN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="663" y="445" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="azWzWG-NQFu0Fi-3XKSD-28" value="GAN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="733" y="345" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

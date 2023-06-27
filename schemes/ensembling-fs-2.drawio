@@ -1,0 +1,132 @@
+<mxfile host="app.diagrams.net" modified="2023-06-26T20:19:34.793Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="--fRJ4lPJzt1CScULgAF" version="21.5.0" type="device">
+  <diagram name="Страница 1" id="wWPH6qbnW_08s5D-j7iK">
+    <mxGraphModel dx="1434" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="685" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="745" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="805" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qgNCPe7IoeoOlpOa5Hy_-119" target="qgNCPe7IoeoOlpOa5Hy_-125" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-119" value="selecting subset&lt;br&gt;of features F&#39;&lt;sub&gt;1&lt;/sub&gt;&amp;nbsp;ranked by the filter ranking measure&amp;nbsp;&lt;i&gt;μ&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="223" width="120" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="qgNCPe7IoeoOlpOa5Hy_-123" target="qgNCPe7IoeoOlpOa5Hy_-119" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="243" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="qgNCPe7IoeoOlpOa5Hy_-123" target="qgNCPe7IoeoOlpOa5Hy_-128" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="qgNCPe7IoeoOlpOa5Hy_-123" target="qgNCPe7IoeoOlpOa5Hy_-130" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="406" />
+              <mxPoint x="390" y="406" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-123" value="feature set F" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="300.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="qgNCPe7IoeoOlpOa5Hy_-125" target="qgNCPe7IoeoOlpOa5Hy_-126" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-125" value="new feature set F* obtained by rank aggregation&lt;br&gt;of F&#39;&lt;sub&gt;1&lt;/sub&gt;, F&#39;&lt;sub&gt;2&lt;/sub&gt;, F&#39;&lt;sub&gt;3&lt;/sub&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="293" width="120" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-126" value="resulting classifier&lt;br&gt;C* on feature&lt;br&gt;subset F*" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="730" y="300.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-127" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.023;entryY=0.512;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="qgNCPe7IoeoOlpOa5Hy_-128" target="qgNCPe7IoeoOlpOa5Hy_-125" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-128" value="selecting subset&lt;br&gt;of features F&#39;&lt;sub&gt;2&lt;/sub&gt;&amp;nbsp;ranked by the filter ranking measure&amp;nbsp;&lt;i&gt;μ&lt;sub&gt;2&lt;/sub&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="298" width="120" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="qgNCPe7IoeoOlpOa5Hy_-130" target="qgNCPe7IoeoOlpOa5Hy_-125" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-130" value="selecting subset&lt;br&gt;of features F&#39;&lt;sub&gt;3&lt;/sub&gt;&amp;nbsp;ranked by the filter ranking measure&amp;nbsp;&lt;i&gt;μ&lt;sub&gt;3&lt;/sub&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="373" width="120" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-131" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qgNCPe7IoeoOlpOa5Hy_-132" target="qgNCPe7IoeoOlpOa5Hy_-142" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="483" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-132" value="ranking all&lt;br&gt;features by the filter ranking measure&amp;nbsp;&lt;i&gt;μ&lt;sub style=&quot;border-color: var(--border-color);&quot;&gt;1&lt;/sub&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="458" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="qgNCPe7IoeoOlpOa5Hy_-134" target="qgNCPe7IoeoOlpOa5Hy_-142" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="543" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-134" value="ranking all&lt;br&gt;features&amp;nbsp;by the filter ranking measure&amp;nbsp;&lt;i&gt;μ&lt;sub style=&quot;border-color: var(--border-color);&quot;&gt;2&lt;/sub&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="518" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="qgNCPe7IoeoOlpOa5Hy_-136" target="qgNCPe7IoeoOlpOa5Hy_-142" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="603" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-136" value="ranking all&lt;br&gt;features&amp;nbsp;by the filter ranking measure&amp;nbsp;&lt;i&gt;μ&lt;sub style=&quot;border-color: var(--border-color);&quot;&gt;3&lt;/sub&gt;&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="578" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="qgNCPe7IoeoOlpOa5Hy_-140" target="qgNCPe7IoeoOlpOa5Hy_-132" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="483" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="qgNCPe7IoeoOlpOa5Hy_-140" target="qgNCPe7IoeoOlpOa5Hy_-134" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="qgNCPe7IoeoOlpOa5Hy_-140" target="qgNCPe7IoeoOlpOa5Hy_-136" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="603" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-140" value="feature set F" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="513" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="qgNCPe7IoeoOlpOa5Hy_-142" target="qgNCPe7IoeoOlpOa5Hy_-143" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-142" value="new feature set F* obtained by cutting feature set ranked by &lt;i&gt;μ&lt;/i&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;(&lt;/span&gt;&lt;i&gt;μ&lt;/i&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;sub style=&quot;font-style: italic;&quot;&gt;1&lt;/sub&gt;,&amp;nbsp;&lt;/span&gt;&lt;i&gt;μ&lt;/i&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;sub style=&quot;font-style: italic;&quot;&gt;2&lt;/sub&gt;,&amp;nbsp;&lt;/span&gt;&lt;i&gt;μ&lt;/i&gt;&lt;sub style=&quot;font-style: italic;&quot;&gt;3&lt;/sub&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="505.5" width="120" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="qgNCPe7IoeoOlpOa5Hy_-143" value="resulting classifier&lt;br&gt;C* on feature&lt;br&gt;subset F*" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="730" y="513" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mPmtsIeHVJHMFfBTmdHy-1" value="а)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="210" width="20" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mPmtsIeHVJHMFfBTmdHy-2" value="б)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="438" width="20" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

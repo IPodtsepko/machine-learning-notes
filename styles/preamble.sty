@@ -1,0 +1,330 @@
+\documentclass[12pt, a4paper, russian]{article}
+
+%<*preamble>
+% Math symbols
+\usepackage{amsmath, amsthm, amsfonts, amssymb} % goes before others
+\usepackage{accents} % used in \dbltilde
+\usepackage{bbm} % \mathbbm
+\usepackage{cmll} % \with
+\usepackage{ebproof} % prooftree environment
+\usepackage{esvect} % \vv: better \vec
+\usepackage{extarrows} % take a guess
+\usepackage{mathrsfs} % \mathscr
+\usepackage{mathtools}\mathtoolsset{showonlyrefs} % lots of things
+\usepackage{physics} % \norm
+\usepackage{stmaryrd} % \{ll,rr}bracket
+\usepackage[normalem]{ulem} % \sout
+\usepackage{faktor} % \faktor
+
+% Page layout
+\usepackage{geometry, a4wide, parskip, fancyhdr}
+\setlength{\headheight}{14.5pt}
+
+% Font, encoding, russian support
+\usepackage[english,russian]{babel}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage[]{libertinus}
+% \usepackage[libertine]{newtxmath}
+\usepackage[bb=boondox]{mathalfa} % \mathbb{0}
+% \usepackage[defaultsans]{opensans}
+
+% Tables
+\usepackage{array} % \newcolumntype
+\usepackage{booktabs} % $\renewcommand{\arraystretch}{1.2}
+\usepackage{diagbox} % \diagbox
+\usepackage{longtable} % lets tables stretch over multiple pages
+\usepackage{multirow} % Cells spanning multiple rows
+
+\newcolumntype{L}{>{$}l<{$}}
+    \newcolumntype{C}{>{$}c<{$}}
+\newcolumntype{R}{>{$}r<{$}}
+
+% Figures
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup{justification=centering,margin=2cm}
+\usepackage{svg}
+\usepackage{movie15}
+\usepackage{wrapfig} % wrapfigure environment
+
+% Miscellaneous
+\usepackage[makeroom]{cancel}
+\usepackage{catchfilebetweentags} % for partial imports
+% \usepackage{enumitem} % idk but needed
+\usepackage{enumerate} % for roman numerals in enumerate environment
+\usepackage{environ} % used in myemph
+\usepackage{empheq} % used in myemph
+\usepackage{etoolbox}
+\usepackage{fancybox}\cornersize{.2}
+\usepackage{float}
+\usepackage{forest} % drawing trees
+\usepackage{lastpage} % LastPage counter
+\usepackage{xcolor} % \textcolor
+\usepackage{spalign} % consise matrices
+
+% Listings
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,breaklines=true}
+% \setmonofont[Scale=MatchLowercase]{JetBrains Mono}
+% \setmonofont[Scale=MatchLowercase]{Inconsolata}
+\usepackage{minted}
+
+\NewEnviron{myemph}{\begin{empheq}[box=\Ovalbox]{equation*}\BODY\end{empheq}}
+
+% Footnotes
+\usepackage[hang]{footmisc}
+\setlength{\footnotemargin}{2mm}
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+% References
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    linkcolor={blue!80!black},
+    citecolor={blue!80!black},
+    urlcolor={blue!80!black},
+}
+
+\usepackage{sectsty}
+% \DeclareRobustCommand\sbseries{\fontseries{sb}\selectfont}
+% \DeclareTextFontCommand{\textsb}{\sbseries}
+% \allsectionsfont{\normalfont\sffamily}
+
+% tikz
+\usepackage{tikz}
+\usepackage{tikz-cd}
+% \tikzcdset{every label/.append style = {font = \small}}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{calc}
+\usetikzlibrary{patterns}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\newcommand\irregularcircle[2]{% radius, irregularity
+    \pgfextra {\pgfmathsetmacro\len{(#1)+rand*(#2)}}
+    +(0:\len pt)
+    \foreach \a in {10,20,...,350}{
+            \pgfextra {\pgfmathsetmacro\len{(#1)+rand*(#2)}}
+            -- +(\a:\len pt)
+        } -- cycle
+}
+
+\providetoggle{useproofs}
+\settoggle{useproofs}{false}
+
+\pagestyle{fancy}
+\lfoot{M3*37y2019}
+\cfoot{}
+\rhead{стр. \thepage\ из \pageref*{LastPage}}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\B}{\mathbb{B}}
+\newcommand{\N}{\mathbb{N}}
+\DeclareMathOperator{\D}{\mathbb{D}}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\renewcommand{\Re}{\mathfrak{R}}
+\renewcommand{\Im}{\mathfrak{I}}
+
+\newcommand{\pluseq}{\mathrel{+}=}
+\newcommand{\asteq}{\mathrel{*}=}
+
+\newcommand{\const}{\text{const}}
+\newcommand{\cond}{\text{cond}}
+
+\newcommand{\teormin}{\textcolor{red}{!}\ }
+
+\DeclareMathOperator*{\xor}{\oplus}
+\DeclareMathOperator*{\equ}{\sim}
+\DeclareMathOperator{\sign}{\text{sign}}
+\DeclareMathOperator{\Sym}{\text{Sym}}
+\DeclareMathOperator{\Asym}{\text{Asym}}
+\DeclareMathOperator{\divided}{\mathrel{\raisebox{-1pt}{\vdots}}}
+\DeclareMathOperator{\ndivided}{\not\hspace{-0.08em}\divided}
+\DeclareMathOperator{\argmax}{\mathrm{argmax}}
+\DeclareMathOperator{\argmin}{\mathrm{argmin}}
+\DeclareMathOperator{\wt}{\mathrm{wt}}
+
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+
+% godel
+\newbox\gnBoxA
+\newdimen\gnCornerHgt
+\setbox\gnBoxA=\hbox{$\ulcorner$}
+\global\gnCornerHgt=\ht\gnBoxA
+\newdimen\gnArgHgt
+\def\godel #1{%
+    \setbox\gnBoxA=\hbox{$#1$}%
+    \gnArgHgt=\ht\gnBoxA%
+    \ifnum     \gnArgHgt<\gnCornerHgt \gnArgHgt=0pt%
+    \else \advance \gnArgHgt by -\gnCornerHgt%
+    \fi \raise\gnArgHgt\hbox{$\ulcorner$} \box\gnBoxA %
+    \raise\gnArgHgt\hbox{$\urcorner$}}
+
+% \theoremstyle{plain}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Теорема}
+\newtheorem*{definition}{Определение}
+\newtheorem{axiom}{Аксиома}
+\newtheorem*{axiom*}{Аксиома}
+\newtheorem{lemma}{Лемма}
+\newenvironment{solution}[1][Решение.]{\begin{proof}[#1]}{\end{proof}}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Примечание}
+\newtheorem{exercise}{Упражнение}
+\newtheorem*{exercise*}{Упражнение}
+\newtheorem{corollary}{Следствие}[theorem]
+\newtheorem*{statement}{Утверждение}
+\newtheorem*{corollary*}{Следствие}
+\newtheorem*{example}{Пример}
+\newtheorem{observation}{Наблюдение}
+\newtheorem*{prop}{Свойства}
+\newtheorem*{notation}{Обозначение}
+
+% subtheorem
+\makeatletter
+\newenvironment{subtheorem}[1]{%
+    \def\subtheoremcounter{#1}%
+    \refstepcounter{#1}%
+    \protected@edef\theparentnumber{\csname the#1\endcsname}%
+    \setcounter{parentnumber}{\value{#1}}%
+    \setcounter{#1}{0}%
+    \expandafter\def\csname the#1\endcsname{\theparentnumber.\Alph{#1}}%
+    \ignorespaces
+}{%
+    \setcounter{\subtheoremcounter}{\value{parentnumber}}%
+    \ignorespacesafterend
+}
+\makeatother
+\newcounter{parentnumber}
+
+\newtheorem{manualtheoreminner}{Теорема}
+\newenvironment{manualtheorem}[1]{%
+    \renewcommand\themanualtheoreminner{#1}%
+    \manualtheoreminner
+}{\endmanualtheoreminner}
+
+\newcommand{\dbltilde}[1]{\accentset{\approx}{#1}}
+\newcommand{\intt}{\int\!}
+
+% magical thing that fixes paragraphs
+\makeatletter
+\patchcmd{\CatchFBT@Fin@l}{\endlinechar\m@ne}{}
+{}{\typeout{Unsuccessful patch!}}
+\makeatother
+
+\newcommand{\get}[2]{
+    \ExecuteMetaData[#1]{#2}
+}
+
+\newcommand{\getproof}[2]{
+    \iftoggle{useproofs}{\ExecuteMetaData[#1]{#2proof}}{}
+}
+
+\newcommand{\getwithproof}[2]{
+    \get{#1}{#2}
+    \getproof{#1}{#2}
+}
+
+\newcommand{\import}[3]{
+    \subsection{#1}
+    \getwithproof{#2}{#3}
+}
+
+\newcommand{\given}[1]{
+    Дано выше. (\ref{#1}, стр. \pageref{#1})
+}
+
+\let\ker\relax
+\DeclareMathOperator{\ker}{ker}
+\let\im\relax
+\DeclareMathOperator{\im}{Im}
+\renewcommand{\grad}{\text{grad}}
+\newcommand{\rg}{\text{rg}}
+\newcommand{\defeq}{\stackrel{\text{def}}{=}}
+\newcommand{\defeqfor}[1]{\stackrel{\text{def } #1}{=}}
+\newcommand{\itemfix}{\leavevmode\makeatletter\makeatother}
+\newcommand{\?}{\textcolor{red}{???}}
+\renewcommand{\emptyset}{\varnothing}
+\newcommand{\longarrow}[1]{\xRightarrow[#1]{\qquad}}
+\DeclareMathOperator*{\esup}{\text{ess sup}}
+\newcommand\smallO{
+    \mathchoice
+    {{\scriptstyle\mathcal{O}}}% \displaystyle
+    {{\scriptstyle\mathcal{O}}}% \textstyle
+    {{\scriptscriptstyle\mathcal{O}}}% \scriptstyle
+    {\scalebox{.6}{$\scriptscriptstyle\mathcal{O}$}}%\scriptscriptstyle
+}
+\renewcommand{\div}{\text{div}\ }
+\DeclareMathOperator{\rot}{rot}
+\DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\arr}{Arr}
+\DeclareMathOperator{\mor}{Mor}
+\DeclareMathOperator{\obj}{Obj}
+\DeclareMathOperator{\aut}{Aut}
+\DeclareMathOperator{\en}{End}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\er}{Er}
+\DeclareMathOperator{\re}{re}
+\DeclareMathOperator{\spec}{spec}
+\newcommand*{\tran}{^{\mathsf{T}}} % (DIN) EN ISO 80000-2:2013
+\newcommand{\conggr}{\stackrel{G}{\cong}}
+
+\makeatletter
+\newcommand{\oplabel}[1]{\refstepcounter{equation}(\theequation\ltx@label{#1})}
+\makeatother
+
+\newcommand{\symref}[2]{\stackrel{\eqref{#1}}{#2}}
+\newcommand{\symrefeq}[1]{\symref{#1}{=}}
+
+% xrightrightarrows
+\makeatletter
+\newcommand*{\relrelbarsep}{.386ex}
+\newcommand*{\relrelbar}{%
+    \mathrel{%
+        \mathpalette\@relrelbar\relrelbarsep
+    }%
+}
+\newcommand*{\@relrelbar}[2]{%
+    \raise#2\hbox to 0pt{$\m@th#1\relbar$\hss}%
+    \lower#2\hbox{$\m@th#1\relbar$}%
+}
+\providecommand*{\rightrightarrowsfill@}{%
+    \arrowfill@\relrelbar\relrelbar\rightrightarrows
+}
+\providecommand*{\leftleftarrowsfill@}{%
+    \arrowfill@\leftleftarrows\relrelbar\relrelbar
+}
+\providecommand*{\xrightrightarrows}[2][]{%
+    \ext@arrow 0359\rightrightarrowsfill@{#1}{#2}%
+}
+\providecommand*{\xleftleftarrows}[2][]{%
+    \ext@arrow 3095\leftleftarrowsfill@{#1}{#2}%
+}
+
+\allowdisplaybreaks
+
+\newcommand{\unfinished}{\textcolor{red}{Не дописано}}
+
+% caseof
+\newcounter{casenum}
+\newenvironment{caseof}{\setcounter{casenum}{1}}{\vskip.5\baselineskip}
+\newcommand{\case}[2]{\vskip.5\baselineskip\par\noindent {\bfseries Случай \arabic{casenum}:} #1\\#2\addtocounter{casenum}{1}}
+
+% Reproducible pdf builds
+\special{pdf:trailerid [
+<00112233445566778899aabbccddeeff>
+<00112233445566778899aabbccddeeff>
+]}
+
+\DeclareMathSymbol{\mlq}{\mathord}{operators}{``}
+\DeclareMathSymbol{\mrq}{\mathord}{operators}{`'}
+%</preamble>
